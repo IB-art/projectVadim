@@ -213,17 +213,27 @@ background-color: $green;
   margin-top: 54px;
   margin-left: 15px;
   &:hover{
+    .header__circle::before{
+      color: $bg;
+    }
    .circle__menu{
-     overflow: auto;
-     height: auto;
+     overflow: hidden;
+     height:  auto;
+   }
+   .circle__item{
+     padding: 23px 23px;
+     border-width: 1px;
    }
   }
 }
 .circle__item{
   background-color: #fff;
-  border: 1px solid #e0e0e0;
+  border: 0px solid #e0e0e0;
+  border-left-width: 1px;
+  border-right-width: 1px;
   border-top: none;
-  padding: 23px;
+  padding: 0 23px;
+  transition: all .3s;
   display: flex;
   align-items: center;
   width: 269px;
