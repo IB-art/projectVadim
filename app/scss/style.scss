@@ -4,6 +4,9 @@
 
 // start header
 
+.header{
+  background-color: #fff;
+}
 .header__top-inner{
   display: flex;
   justify-content: space-between;
@@ -107,6 +110,7 @@ background-color: $tomato;
   }
 }
 .basket{
+  margin-right: 20px;
   span{
 background-color: $green;    
   }
@@ -121,7 +125,6 @@ background-color: $green;
   }
 }
 .user{
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
