@@ -181,6 +181,7 @@ background-color: $green;
 .circle__menu{
   position: absolute;
   top: 69px;
+  z-index: 1;
 }
 .user__box,
 .basket__box,
@@ -310,6 +311,10 @@ background-color: $green;
 }
 .icons-color::before{
  color: $tomato;
+}
+.header__btn-menu,
+.menu__btn{
+  display: none;
 }
 
 // end header
@@ -1178,3 +1183,8 @@ button.icon-unsorted{
 
 
 // end product-page
+
+
+
+
+@import 'media';
