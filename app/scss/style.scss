@@ -1920,6 +1920,9 @@ button.icon-unsorted{
   margin-right: 30px;
   max-width: 270px;
   width: 100%;
+  & .footer__social-link{
+    margin-bottom: 30px;
+  }
 }
 .profile__content{
   width: 100%;
@@ -1983,6 +1986,46 @@ button.icon-unsorted{
   padding: 18px 10px;
   background-color: $green;
   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+}
+
+.profile__banner{
+  padding: 20px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+.profile__banner-images{
+  background-image: url(../images/content/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center;
+  min-height: 332px;
+}
+.profile__items{
+  display: flex;
+  border: 1px solid #dedede;
+}
+.profile__item{
+  width: 25%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 5px 17px;
+  & + .profile__item{
+    border-left: 1px solid #dedede;
+  }
+}
+.profile__item-title{
+  font-size: 14px;
+  color: $bg; 
+  @include f500; 
+}
+.profile__item-content{
+  font-size: 14px;
+  color: #707070;
+  @include f500;
+  &.profile__item-sales{
+    color: $bg;
+  }
 }
 
 // end profile
