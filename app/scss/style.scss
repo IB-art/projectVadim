@@ -4,6 +4,11 @@
 
 // start header
 
+.wrapper{
+  position: relative;
+  overflow-x: hidden;
+}
+
 .header{
   background-color: #fff;
 }
@@ -493,6 +498,11 @@ button{
   padding: 110px 0px;
   background-color: $grey;
 }
+.products__wrapper,
+.product-slider__wrapper{
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .products__inner-btn{
   text-align: center;
   margin-bottom: 60px;
@@ -513,8 +523,13 @@ cursor: pointer;
 }
 .products__inner-box{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-left: -30px;
   flex-wrap: wrap;
+}
+.products .product__item{
+  flex-basis: calc(25% - 30px);
+  margin-left: 30px;
 }
 .product__item{
   max-width: 442px;
@@ -1148,9 +1163,10 @@ button.icon-unsorted{
 }
 .product-page__content{
   .product__item{
-    max-width: 270px;
+    flex-basis: calc(33.3333% - 30px);
     background-color: #fff;
     transition: all .5s;
+    margin-left: 30px;
   }
   .product__item-img{
     min-height: 180px;
@@ -1174,9 +1190,10 @@ button.icon-unsorted{
 }
 .product-page__items{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
 }
 .pagination__list{
   li{
@@ -1246,6 +1263,7 @@ button.icon-unsorted{
 .product__item{
   &.list{
     max-width: 100%;
+    flex-basis: 100%;
     .product__item-img{
       width: 240px;
       float: left;
@@ -1305,7 +1323,7 @@ button.icon-unsorted{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px;
 }
 .product-one__images{
   max-width: 829px;
@@ -1608,6 +1626,10 @@ button.icon-unsorted{
     @include f500;
   }
 }
+.jq-selectbox__trigger{
+  color: #8bc34a;
+}
+
 
 // end product-one
 
@@ -1908,6 +1930,37 @@ button.icon-unsorted{
     color: #707070;
   }
 }
+.jq-selectbox{
+  width: 100%;
+  max-width: 540px;
+}
+.jq-selectbox__select {
+  height: 40px;
+  padding: 0px 18px;
+  border: 1px solid #d7d7d7;
+  border-bottom-color: #d7d7d7;
+  border-radius: 0px;
+  background: #f9f9f9;
+  box-shadow: none;
+  font-family: 'Roboto-Regular', sans-serif;
+  color: #707070;
+  text-shadow: none;
+  line-height: 40px;
+ }
+ .jq-selectbox__trigger-arrow{
+   border: none;
+   top: 0;
+   right: 20px;
+   line-height: 40px;
+   font-size: 15px;
+   &::before{
+    font-family: 'icomoon' !important;
+    content: "\f0d7";
+   }
+ }
+ .jq-selectbox__trigger{
+   border-left: none;
+ }
 
 // end settings
 
